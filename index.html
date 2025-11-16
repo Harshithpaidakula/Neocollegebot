@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoCampus AI - Your Campus Companion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 NeoCampus AI</h1>
+            <p>Your intelligent campus companion for all college-related queries</p>
+            <div class="college-info">
+                📍 SVS Group of Institutions, Warangal | 🎓 Engineering • Pharmacy • MBA
+            </div>
+        </div>
+
+        <div class="quick-actions">
+            <div class="action-card" onclick="quickQuery('Tell me about admission process for Engineering')">
+                <span class="icon">🎓</span>
+                <h3>Admissions</h3>
+                <p>Get info about entrance exams, cutoffs, application process, and important dates</p>
+            </div>
+            <div class="action-card" onclick="quickQuery('What facilities are available in SVS campus?')">
+                <span class="icon">🏫</span>
+                <h3>Campus Facilities</h3>
+                <p>Explore library, labs, hostels, sports complex, and other campus amenities</p>
+            </div>
+            <div class="action-card" onclick="quickQuery('Tell me about student clubs and activities')">
+                <span class="icon">🎭</span>
+                <h3>Clubs & Activities</h3>
+                <p>Discover cultural events, technical clubs, sports teams, and student organizations</p>
+            </div>
+            <div class="action-card" onclick="quickQuery('What are the canteen timings and menu options?')">
+                <span class="icon">🍽️</span>
+                <h3>Canteen & Food</h3>
+                <p>Check meal timings, menu options, pricing, and food quality information</p>
+            </div>
+            <div class="action-card" onclick="quickQuery('How is the placement record and which companies visit?')">
+                <span class="icon">💼</span>
+                <h3>Placements</h3>
+                <p>Learn about placement statistics, visiting companies, and career opportunities</p>
+            </div>
+            <div class="action-card" onclick="quickQuery('What are the exam schedules and academic calendar?')">
+                <span class="icon">📚</span>
+                <h3>Academics</h3>
+                <p>Get exam schedules, syllabus, academic calendar, and study resources</p>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>💬 Chat with NeoCampus AI</h2>
+                <p>Ask me anything about SVS Group of Institutions - admissions, facilities, academics, placements, and more!</p>
+            </div>
+
+            <div class="suggestion-chips">
+                <span class="chip" onclick="quickQuery('What are the fee structures?')">💰 Fee Structure</span>
+                <span class="chip" onclick="quickQuery('How to apply for scholarships?')">🏆 Scholarships</span>
+                <span class="chip" onclick="quickQuery('What are the hostel facilities?')">🏠 Hostel Info</span>
+                <span class="chip" onclick="quickQuery('Tell me about faculty and departments')">👨‍🏫 Faculty</span>
+                <span class="chip" onclick="quickQuery('What transportation options are available?')">🚌 Transport</span>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <strong>🤖 NeoCampus AI:</strong><br>
+                    Hi there! Welcome to SVS Group of Institutions! 👋<br><br>
+                    I'm here to help you with any questions about:
+                    <ul style="margin: 10px 0; padding-left: 20px;">
+                        <li>🎓 Admissions & Entrance Exams</li>
+                        <li>🏫 Campus Facilities & Infrastructure</li>
+                        <li>📚 Academic Programs & Curriculum</li>
+                        <li>🎭 Student Clubs & Activities</li>
+                        <li>🍽️ Canteen & Food Services</li>
+                        <li>💼 Placements & Career Opportunities</li>
+                        <li>🏠 Hostel & Accommodation</li>
+                        <li>💰 Fees & Scholarships</li>
+                    </ul>
+                    Just type your question or click on the quick action cards above!
+                </div>
+            </div>
+
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <input type="text" class="chat-input" id="chatInput" placeholder="Ask me anything about SVS Group of Institutions..." onkeypress="handleKeyPress(event)">
+                <button class="send-button" id="sendButton" onclick="sendMessage()">Send 📤</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
