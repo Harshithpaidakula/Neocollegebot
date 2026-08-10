@@ -186,10 +186,10 @@ svsKnowledgeBase = {
 ## 📞 Support Information
 
 ### Technical Support
-- **Developer**: [Your Name]
-- **Email**: [Your Email]
+- **Developer**: Paidakula Harshith
+- **Email**: harshithpaidakula@gmail.com
 - **College**: SVS Group of Institutions
-- **Department**: [Your Department]
+- **Department**: cse
 
 ### College Contact
 - **Phone**: 0870-2453900, +91-9849509036, +91-9391949237
